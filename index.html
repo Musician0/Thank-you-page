@@ -26,16 +26,18 @@
                   <div class="user-signup__intro">
                     <h1 style="text-align: center;">--Free Guide--</h1>
                     <p style="text-align: center;">
-                      <img src="/res/spacer.png" alt="" class="spacer insert--image wrap-off-align-center"><br>
+                      <img src="res/spacer.png" alt="" class="spacer insert--image wrap-off-align-center"><br>
                     </p>
                     <p style="text-align: center;">4 Simple Steps To Quickly Attract More Clients For Your Law Firm With Instagram & Facebook</p>
                     <p style="text-align: center;">
-                      <img src="/res/clean-hr.png" alt="" class="clean-hr insert--image wrap-off-align-center">
-                      <span style="font-size: 14px;">Enter your email address to receive the lawyer bible to getting more clients:</span>
+                      <img src="res/clean-hr.png" alt="" class="clean-hr insert--image wrap-off-align-center">
+                      <span style="font-size: 14px;">Enter your details to receive the lawyer bible guide:</span>
                     </p>
                   </div>
                 </div>
                 <div class="row">
+
+<!-- Contact form -->
 <form id="my-form" action="https://formspree.io/f/xgvlrekj" method="POST" class="form form-horizontal user-signup__form contact-card" novalidate>
   <div class="contact-grid">
     <div class="contact-field">
@@ -55,7 +57,7 @@
       <textarea id="message" name="message" class="form-control contact-textarea" rows="5" placeholder="Write your message..." required></textarea>
     </div>
 
-    <!-- Honeypot for bots -->
+    <!-- Honeypot -->
     <input type="text" name="company" class="contact-hp" tabindex="-1" autocomplete="off">
 
     <div class="contact-actions contact-field--full">
@@ -67,6 +69,7 @@
     </div>
   </div>
 </form>
+<!-- End Contact form -->
 
                 </div>
               </div>
@@ -75,29 +78,7 @@
         </section>
       </div>
     </div>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-1858235-15', 'auto');
-      ga('send', 'pageview');
-    </script>
-        <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-1858235-15', 'auto');
-      ga('send', 'pageview');
-    </script>
 
-    <!-- Your Formspree submission script goes here -->
-  
-  </body>
-</html>
-
-  
 <script>
   (function() {
     var form = document.getElementById("my-form");
@@ -105,17 +86,10 @@
 
     var status = document.getElementById("my-form-status");
     var btn = document.getElementById("my-form-button");
-    var btnText = btn.querySelector(".btn-text");
-    var btnProg = btn.querySelector(".btn-progress");
 
     function setLoading(loading) {
-      if (loading) {
-        btn.disabled = true;
-        btn.classList.add("is-loading");
-      } else {
-        btn.disabled = false;
-        btn.classList.remove("is-loading");
-      }
+      if (loading) { btn.disabled = true; btn.classList.add("is-loading"); }
+      else { btn.disabled = false; btn.classList.remove("is-loading"); }
     }
 
     async function handleSubmit(event) {
@@ -156,5 +130,5 @@
     form.addEventListener("submit", handleSubmit);
   })();
 </script>
-</body>
+  </body>
 </html>
